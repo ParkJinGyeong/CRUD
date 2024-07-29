@@ -21,5 +21,13 @@ from posts import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
+    #Read(1)
     path('posts/<int:id>/', views.detail),
+    #Create
+    path('posts/new/', views.new),
+    path('posts/create/', views.create),
+    path('posts/<int:id>/delete/', views.delete),
+    path('posts/<int:id>/edit/', views.edit),
+    path('posts/<int:id>/update/', views.update),
+         
 ]
